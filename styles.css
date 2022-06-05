@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body{
+    font-family: "Poppins";
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 200px;
+    height: 120px;
+
+}
+.get-in-touch{
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 9px 13px 70px 11px rgba(0,0,0,0.85);
+    -moz-box-shadow: 9px 13px 70px 11px rgba(0,0,0,0.85);
+    box-shadow: 9px 13px 70px 11px rgba(0,0,0,0.85);
+    padding: 30px;
+}
+.get-in-touch .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label{
+    transform: translateY(-24px);
+}
+
+.details-form .input-text:focus + .label,
+.details-form .input-text.non-empty + .label,
+.details-form .input-text:not(:placeholder-shown) + .label {
+  transform: translateY(-24px);
+}
+.contact-form .input-text:not([value=""]) + .label ,.contact-form .input-text:focus + .label {
+    transform: translateY(-30px);
+}
+
+.contact-form .input-text:focus{
+    outline: none;
+}
+.contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn{
+    display: inline-block;
+    /* background-image: linear-gradient(125deg); */
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #19A8DD 0%, rgba(9,105,121,0.7509504045758928) 35%, rgba(0,212,255,1) 100%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+
+
